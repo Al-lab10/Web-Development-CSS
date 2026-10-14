@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="logo.ico">
+  <title>WearSite</title>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+      <a href="../HTML/index.html"><img src="../images/logo.png" alt="WearSite Logo"></a>
+      </div>
+      <div class="header">
+      <p>Wear<span style="color: #E8A33D;">Site</span></p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu"
+        onclick="document.querySelector('nav ul').classList.toggle('open')">
+  <i class='bx bx-menu'></i>
+</button>
+
+      <ul>
+        <li><a href="../HTML/about.html">About</a></li>
+         <li><a href="../HTML/wearpedia.html">Wearpedia</a></li>
+        <li><a href="../HTML/news.html">News</a></li>
+         <li><a href="../HTML/events.html">Events</a></li>
+        <li><a href="../HTML/contact.html" style="text-decoration: underline;">Contact</a></li>
+      </ul>
+    </nav>
+
+<div class="flex-container">
+ <div class="hero hero-contact">
+  <h1><span style="color: #E8A33D;">Learn</span> and <span style="color: #E8A33D;">Wear</span> the  <span style="color: #E8A33D;">Future</span></h1>
+  <p>Technology is no longer something we simply use—it is something we can wear. Explore the innovations shaping the future of wearable technology.</p>
+ </div>
+
+ <div class="contact-form">
+  <h2>Contact Us</h2>
+  <form method="post">
+   <label>First name</label><br>
+   <input type="text" name="FN" placeholder="Juan" required><br>
+   <label>Last name</label><br>
+   <input type="text" name="LN" placeholder="Dela Cruz" required><br>
+   <label>Email</label><br>
+   <input type="email" name="Em" placeholder="juandelacruz@gmail.com" required><br>
+   <label>Message</label><br>
+   <textarea rows="5" maxlength="600px"></textarea>
+   <div class="submit-button">
+   <input type="submit">
+   </div>
+  </form>
+ </div>
+</div>
+  <footer>
+    <div class="logo">
+      <a href="../HTML/index.html"><img src="../images/logo.png" alt="WearSite Logo"></a>
+      </div>
+      <div class="header">
+      <p>Wear<span style="color: #E8A33D;">Site</span></p>
+      </div>
+      <div class="links-footer">
+      <ul>
+        <li><a href="../HTML/about.html">About</a></li>
+        <li><a href="../HTML/news.html">News</a></li>
+         <li><a href="../HTML/events.html">Events</a></li>
+      </ul>
+   </div>
+   <div class="links-footer2">
+    <ul>
+   <li><a href="../HTML/wearpedia.html">Wearpedia</a></li>
+   <li><a href="../HTML/contact.html">Contact</a></li>
+   </ul>
+   </div>
+   <div class="social-media">
+      <a href="https://www.instagram.com/its.not_rancze/" target="_blank" style="--i:1;" class="insta"><i class='bx bxl-instagram-alt' ></i></a>
+      <a href="https://www.facebook.com/rance.allen.7/" target="_blank" style="--i:2;"><i class='bx bxl-facebook-circle'></i></a>
+      <p>©2026 by WearSite</p>
+   </div>
+  </footer>
+</body>
+</html>

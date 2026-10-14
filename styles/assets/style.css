@@ -1,0 +1,1050 @@
+ /* General Styles
+ Primary Color: #0D9488
+ Secondary Color: #0B7F74 and 
+ Background Color: #F5F8F7
+ Font Family: Sora/Poppins, sans-serif
+ */
+
+ *{
+  box-sizing: border-box;
+ }
+
+ html{
+  scroll-behavior: smooth;
+ }
+
+ body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: 'Sora', sans-serif;
+  background-color: #F5F8F7;
+  margin: 0;
+ }
+
+ /*Navigational Bar */
+ nav{
+  background-color: #0D9488;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+  position: sticky; 
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #0B7F74;
+ }
+
+ nav ul{
+  list-style: none;
+  display: flex;
+  margin: 0px 20px;
+  gap: 20px;
+  padding: 8px 10px 8px 0px;
+ }
+
+ nav a{
+  text-decoration: none;
+  color: #F5F8F7;
+  transition: all 0.3s ease;
+  font-size: 20px;
+ }
+
+ nav a:hover{           
+  font-size: 1.2em;
+  color: #E8A33D;
+ }
+
+ .logo img{
+  height: 60px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+ }
+
+ .logo img:hover{
+  transform: rotate(360deg);
+ }
+
+ .header{
+  color: #F5F8F7;
+  font-size: 1.7em;
+  margin: 8px;
+  font-weight: bold;
+  margin-right: auto;
+ }
+
+ /*Nav Bar for smaller screen size */
+ .menu-toggle{
+  display: none;
+  background: none;
+  border: none;
+  color: #F5F8F7;
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ }
+
+ .menu-toggle:active{
+  transform: rotate(360deg);
+ }
+
+
+ /* HERO */
+ .hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+ }
+
+ .hero h1{
+  font-size: 5em;
+  color: #0B7F74;
+  margin: 20px;
+ }
+
+ .hero p{
+  font-size: 1.8em;
+  color: #0B7F74;
+  text-align: left;
+  max-width: 1700px;
+  margin: 20px;
+ }
+
+ .content-1{
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+ }
+
+ .hero video{
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ }
+
+ .about-btn button{
+  background-color: #0D9488;
+  color: #F5F8F7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px;
+  font-size: 1.6em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ }
+
+ .about-btn button:hover{
+  background-color: #0B7F74;
+  transform: scale(1.1);
+ }
+
+
+ /* MAIN CONTENT */
+ main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  flex-direction: column;
+ }
+
+ .devices h2{
+  text-align: center;
+  font-size: 2.5em;
+ }
+
+ .devices p{
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 900px;
+ }
+
+ .cards{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+ .card-1, .card-2, .card-3{
+  background-color: #0D9488;
+  border: 1px solid #0B7F74;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px;
+  transition: all 0.4s ease;
+ }
+
+ @media (hover: hover){
+ .card-1:hover, .card-2:hover, .card-3:hover{
+ transform: scale(1.1);
+}
+ }
+
+ .card-1 img, .card-2 img, .card-3 img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+ }
+
+ .card-1 h3, .card-2 h3, .card-3 h3{
+  color: #F5F8F7;
+ }
+
+ .card-1 h2, .card-2 h2, .card-3 h2{
+  color: #E8A33D;
+ }
+
+ .card-1 p, .card-2 p, .card-3 p{
+  color: #F5F8F7;
+  font-size: 1.1em;
+ }
+
+ main a{
+  color: #F5F8F7;
+  text-decoration: none;
+ }
+
+ main button{
+  background-color: #0D9488;
+  color: #F5F8F7;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  margin: 0;
+ }
+
+ .cards button{
+  display: block;
+  margin: 40px auto 0;
+ }
+
+ main button:hover{
+  transform: scale(1.1);
+ }
+
+ .news h2{
+  text-align: center;
+  font-size: 2.5em;
+ }
+
+ .news p{
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 900px;
+ }
+
+ .btn-all{
+  margin-bottom: 20px;
+ }
+
+
+ /* ABOUT MAIN CONTENT */
+ .hero-about h1{
+  font-size: 4em;
+  color: #0B7F74;
+  margin: 30px;
+ }
+
+ .text-1, .text-2, .text-3{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 28px;
+  background: #F5F8F7;
+  border-bottom: 1px solid #0B7F74;
+  border-radius: 10px;
+ }
+
+ .text-1{
+  margin-top: -30px;
+ }
+
+ .text-1 h2, .text-2 h2, .text-3 h2{
+  margin: 0;
+ }
+
+ .text-1 p, .text-2 p, .text-3 p{
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6;
+ }
+
+ .team-members h2{
+  text-align: center;
+  font-size: 2.5em;
+ }
+
+ .team-members p{
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 900px;
+ }
+
+ .team-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+ }
+
+ .aboutcard-1, .aboutcard-2, .aboutcard-3{
+  background-color: #0D9488;
+  border: 1px solid #0B7F74;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+  transition: all 0.4s ease;
+ }
+
+ @media (hover: hover){
+.aboutcard-1:hover, .aboutcard-2:hover, .aboutcard-3:hover{
+ transform: scale(1.1);
+}
+ }
+
+.aboutcard-1 img, .aboutcard-2 img, .aboutcard-3 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+  margin-bottom: 10px;
+ }
+
+ .aboutcard-1 h3, .aboutcard-2 h3, .aboutcard-3 h3{
+  color: #E8A33D;
+  text-align: center;
+ }
+
+ .aboutcard-1 p, .aboutcard-2 p, .aboutcard-3 p{
+  color: #F5F8F7;
+  font-size: 1.1em;
+  text-align: center; 
+ }
+
+ .aboutcard-1 a, .aboutcard-2 a, .aboutcard-3 a{
+  color: #F5F8F7;
+  font-size: 2em;
+  transition: color 0.5s ease;
+  margin: 0 10px;
+ }
+
+ .aboutcard-1 a:hover, .aboutcard-2 a:hover, .aboutcard-3 a:hover{
+  color: #E8A33D;
+ }
+
+
+ /* WEARPEDIA MAIN CONTENT */
+ .searchbar{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  max-width: 500px;
+  margin: 12px auto;
+  padding: 10px 20px;
+  background: #F5F8F7;
+  border: 2px solid #0D9488;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+ }
+
+ .search-sticky{
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: #F5F8F7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ .searchbar:focus-within{
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.3);
+ }
+
+ .searchbar i{
+  font-size: 1.4em;
+  color: #0D9488;
+ }
+
+ .searchbar input{
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  background: transparent;
+  color: #0B7F74;
+ }
+
+ .searchbar input::placeholder{
+  color: #6b7280;
+ }
+
+ .hero-wearpedia{
+  margin: 30px 30px 50px 30px;
+ }
+
+ .hero-wearpedia h1{
+  font-size: 4em;
+  color: #0B7F74;
+  margin: 20px;
+  text-align: center;
+ }
+
+ .hero-wearpedia p{
+  font-size: 1.1em;
+  text-align: center;
+ }
+
+ .info-1, .info-2, .info-3, .info-4{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 24px 28px;
+  background: #F5F8F7;
+ }
+
+ .info-1 img, .info-2 img, .info-3 img, .info-4 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+ }
+
+ .info-1 p, .info-2 p, .info-3 p, .info-4 p{
+  text-align: justify;
+  margin: 0;
+  line-height: 2.0;
+ }
+
+ .info-1 a, .info-2 a, .info-3 a, .info-4 a{
+  color: black;
+  text-decoration: underline;
+ }
+
+ /* NEWS PAGE uses previous CSS code cards. THIS IS NOW THE ARTICLE PAGE. */
+ 
+ .heroarticle-1{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px 10px;
+ }
+ 
+ .heroarticle-1 h1{
+  font-size: 3.5em;
+  color: #0B7F74;
+  margin: 0 0 10px;
+ }
+ 
+ .heroarticle-1 h2{
+  font-size: 1.6em;
+  margin: 0 0 10px;
+ }
+ 
+ .heroarticle-1 p{
+  margin: 0;
+ }
+
+
+ main.article-layout{
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  align-items: start; 
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+ }
+ 
+ .article-main img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ }
+
+ .share{
+  display: flex;
+  gap: 14px;
+  margin: 16px 0 24px;
+ }
+ 
+ .share a{
+  color: #0B7F74;
+  font-size: 2em;
+  line-height: 1;
+  transition: color 0.5s ease;
+ }
+ 
+ .share a:hover{
+  color: #E8A33D;
+ }
+ 
+ .articletext-1 p{
+  font-size: 1.1em;
+  line-height: 1.9;
+  margin: 0 0 1.2em;
+ }
+ 
+ .article-main .btn-all{
+  margin-top: 10px;
+ }
+ 
+ 
+ /* FLOATING SIDEBAR for ARTICLE PAGES */
+ .related-news{
+  position: sticky;
+  top: 150px;
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+  padding: 6px;
+ }
+
+ .related-news button{
+  height: auto;
+  border-radius: 15px;
+  margin-top:10px;
+  margin-bottom: 10px;
+ }
+ 
+ .related-news > h2{
+  font-size: 1.8em;
+  color: #0B7F74;
+  text-align: center;
+  margin: 0 0 16px;
+ }
+ 
+ .related-list{
+  display: grid;
+  gap: 20px;
+ }
+ 
+ /* Reuses CSS card look, just made compact for the sidebar */
+ .related-card{
+  margin: 0;
+  max-width: none;
+  padding: 16px;
+ }
+
+ .related-card:hover{
+  transform: none;
+ }
+ 
+ .related-card img{
+  height: 150px;
+  object-fit: cover;
+ }
+ 
+ .related-card h3{
+  margin: 6px 0;
+ }
+ 
+ .related-card h2{
+  font-size: 1.1em;
+  margin: 0 0 8px;
+ }
+ 
+ .related-card p{
+  font-size: 0.9em;
+  margin: 0;
+ }
+
+ /* EVENTS */
+ .hero-events{
+  text-align: center;
+ }
+ .card-events h2{
+  text-align: center;
+  color: #E8A33D;
+ }
+
+ /* CONTACT */
+ .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+ }
+ 
+ .hero-contact{
+  flex: 1 1 0;
+  min-width: 0; 
+  padding-left: 0;
+  padding-right: 0;
+ }
+ 
+ .hero-contact h1,
+ .hero-contact p{
+  margin-left: 0;
+  margin-right: 0;
+ }
+ 
+ .hero-contact p{
+  font-size: 1.5em;
+  max-width: 700px;
+  line-height: 1.6;
+  color: black;
+ }
+ 
+ .contact-form{
+  flex: 0 1 500px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+  margin: 20px 0;
+  border: #0B7F74;
+  background-color: #0D9488;
+  padding: 20px;
+  border-radius: 10px;
+  color: #F5F8F7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+ }
+ 
+ .contact-form:focus-within{
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.3);
+ }
+ 
+ .contact-form input,
+ .contact-form textarea{
+  font-family: inherit;
+  font-size: 1.1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+ }
+ 
+ .contact-form textarea{
+  resize: vertical;
+ }
+ 
+ .submit-button{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+ }
+ 
+ .submit-button input{
+  background-color: #0D9488;
+  color: #F5F8F7;
+  width: 100px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+ }
+
+ .submit-button input:hover{
+  transform: scale(1.1);
+ }
+
+ /*FOOTER*/
+ footer{
+  background-color: #0D9488;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: auto;
+ }
+
+ .links-footer{
+  margin-top: 15px;
+  margin-right: 80px;
+ }
+
+ .links-footer ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+ }
+
+ .links-footer a{
+  font-size: 20px;
+  color: #F5F8F7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+ }
+
+ .links-footer a:hover{
+  font-size: 1.1em;
+  color: #E8A33D;
+ }
+
+ .links-footer2{
+  margin-top: 15px;
+  margin-right: auto;
+  padding-bottom: 15px;
+ }
+
+ .links-footer2 ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 19px;
+  flex-direction: column;
+  margin-bottom: 40px;
+ }
+
+ .links-footer2 a{
+  font-size: 20px;
+  color: #F5F8F7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+ }
+
+ .links-footer2 a:hover{
+  font-size: 1.2em;
+  color: #E8A33D;
+ }
+
+ .insta{
+  margin-left: 60px;
+ }
+
+ .social-media a{
+  color: #F5F8F7;
+  font-size: 2em;
+  margin-right: 20px;
+  transition: color 0.5s ease;
+ }
+
+ .social-media a:hover{
+  color: #E8A33D;
+ }
+
+ .social-media p{
+  color: #F5F8F7;
+  font-weight: 200;
+  margin-right: 20px;
+ }
+
+
+ @media (max-width: 1100px){
+.team-cards{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-contact h1{
+  font-size: 3.5em;
+}
+ 
+.hero-contact p{
+  font-size: 1.3em;
+}
+ }
+
+ /* Tablet and below, burger menu appears */
+ @media (max-width: 900px){
+.menu-toggle{
+  display: block;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+}
+
+nav ul.open{
+  max-height: 300px;
+  opacity: 1;
+  padding: 10px 0;
+}
+
+.logo img{
+  height: 40px;
+  margin: 8px 12px;
+}
+
+.text-1, .text-2, .text-3{
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+
+.info-1, .info-2, .info-3, .info-4{
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.flex-container{
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0 20px;
+}
+
+.heroarticle-1 h1{
+  font-size: 2.6em;
+}
+ 
+main.article-layout{
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+ 
+.related-news{
+  position: static;
+  max-height: none;
+  overflow: visible;
+}
+ 
+.related-list{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.hero-contact{
+  flex: none;
+  padding: 30px 0 10px;
+}
+ 
+.contact-form{
+  flex: none;
+  align-self: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0 30px;
+}
+ }
+
+ @media (max-width: 600px){
+main{
+  padding: 10px 16px;
+}
+
+/* Home */
+.hero{
+  padding: 30px 16px;
+}
+
+.hero h1{
+  font-size: 3em;
+  margin: 12px 0;
+}
+
+.hero p{
+  font-size: 1.2em;
+  margin: 12px 0;
+}
+
+.about-btn button{
+  font-size: 1.2em;
+  margin: 12px 0;
+}
+
+.content-1{
+  padding: 0;
+}
+
+.devices h2, .news h2, .team-members h2{
+  font-size: 1.8em;
+}
+
+.devices p, .news p, .team-members p{
+  font-size: 1.1em;
+}
+
+/* About */
+.hero-about h1{
+  font-size: 2.4em;
+  margin: 20px 16px;
+}
+
+.text-1{
+  margin-top: 0;
+}
+
+.text-1, .text-2, .text-3{
+  padding: 16px;
+}
+
+.text-1 p, .text-2 p, .text-3 p{
+  text-align: left;
+}
+
+.team-cards{
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.aboutcard-1 img, .aboutcard-2 img, .aboutcard-3 img{
+  height: 250px;
+}
+
+/* Wearpedia */
+.searchbar{
+  margin: 8px auto;
+  padding: 6px 16px;
+}
+
+.hero-wearpedia{
+  margin: 16px 16px 30px;
+}
+
+.hero-wearpedia h1{
+  font-size: 2.6em;
+  margin: 12px 0;
+}
+
+.hero-wearpedia p{
+  font-size: 1em;
+}
+
+.info-1, .info-2, .info-3, .info-4{
+  padding: 12px 0;
+  margin: 10px auto;
+}
+
+.info-1 img, .info-2 img, .info-3 img, .info-4 img{
+  height: 220px;
+}
+
+.info-title{
+  font-size: 2em;
+}
+
+.info-1 p, .info-2 p, .info-3 p, .info-4 p{
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Footer */
+footer{
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 20px 16px;
+}
+
+footer .header{
+  margin: 0;
+}
+
+.links-footer, .links-footer2{
+  margin: 0;
+  padding: 0;
+}
+
+.links-footer ul, .links-footer2 ul{
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.social-media a{
+  margin: 0 10px;
+}
+
+.social-media p{
+  margin-right: 0;
+}
+
+.flex-container{
+  padding: 0 16px;
+}
+.heroarticle-1{
+  padding: 20px 16px 0;
+}
+ 
+.heroarticle-1 h1{
+  font-size: 2.2em;
+}
+ 
+.heroarticle-1 h2{
+  font-size: 1.2em;
+}
+ 
+main.article-layout{
+  padding: 10px 16px;
+}
+ 
+.articletext-1 p{
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.hero-contact{
+  padding: 20px 0 0;
+}
+ 
+.hero-contact h1{
+  font-size: 2.4em;
+}
+ 
+.hero-contact p{
+  font-size: 1.1em;
+}
+ 
+.contact-form{
+  padding: 16px;
+  margin-bottom: 24px;
+}
+ }
+
+
+ 
+ 
+ 
